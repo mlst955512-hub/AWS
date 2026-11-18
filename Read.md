@@ -1,17 +1,32 @@
-IAM USER = CLI
+AWS IAM User: Configuring CLI Access
 
-Step #1 -		OPEN CMD in your local system 
- 		type command = aws –version
-		if not installed then install using below link
-		https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions
+This guide walks through setting up programmatic access for an AWS IAM user via the AWS Command Line Interface (CLI), configuring credentials locally, and troubleshooting initial AccessDenied permission errors.
+
+Step 1: Verify or Install AWS CLI
+
+Open Command Prompt (CMD) on your local system and check if the AWS CLI is installed:
+
+aws --version
+
+Note: If it is not installed, download and install it using the Official AWS CLI Installation Guide.
+
+Step 2: Understand Programmatic Access
+
+Before generating credentials, keep in mind how CLI authentication works:
+
+Note: Access Keys (Access Key ID and Secret Access Key) allow you to interact with AWS services programmatically via the AWS CLI and SDKs.
 
 <img width="841" height="141" alt="image" src="https://github.com/user-attachments/assets/c4236371-5d79-400c-a6bc-848e54f7c2b0" />
 
-Step #2 -		Creating access for CLI 
- 	Note – Access Keys (access key and secret key): interact with aws service programmatically (via CLI and SDK) 
+Step 3: Navigate to IAM Security Credentials
 
-Step #3 - 	Creating access key for IAM User we created 
- 		Go to - Root account – IAM – IAM users – open user – security credentials – Access key – create Access key 
+Create an access key for the IAM user you created:
+
+Go to Root account > IAM > IAM users > open user (demo-user-11182026).
+
+Navigate to Security credentials > Access keys > click Create access key.
+
+Note – Access Keys (access key and secret key): interact with aws service programmatically (via CLI and SDK) 
 
 <img width="1144" height="248" alt="image" src="https://github.com/user-attachments/assets/4b7c17bf-e1ff-42b8-83f5-5202a63c323e" />
 
